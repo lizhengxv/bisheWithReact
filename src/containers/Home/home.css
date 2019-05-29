@@ -1,0 +1,10 @@
+.home .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home .title .logo{
+    display: flex;
+    align-items: center;
+}

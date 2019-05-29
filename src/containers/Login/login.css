@@ -1,0 +1,9 @@
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login>div{
+    width: 300px;
+}

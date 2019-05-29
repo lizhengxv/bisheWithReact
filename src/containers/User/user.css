@@ -1,0 +1,34 @@
+.user .user-info .smile-o{
+ font-size: 20px;
+}
+
+.user .user-info{
+    height: 50px;
+    line-height: 50px;
+}
+
+.user .user-info>p{
+    float: right;
+}
+
+.zhiye-list{
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0px;
+  margin-bottom: 5px;
+}
+
+.zhiye-list .zhiye-juti-info{
+    display: flex;
+    justify-content: space-around;
+}
+
+.zhiye-list .zhiye-juti-info{
+    width: 100%;
+}
+.zhiye-list:nth-child(1){
+ 
+}
+.zhiye-list .jutiinfo{
+    height: auto;
+    text-align: left;
+}
