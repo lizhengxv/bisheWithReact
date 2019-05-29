@@ -1,0 +1,111 @@
+.search-main{
+   background-color: rgb(245,245,245);
+}
+
+.item-wrapper {
+    text-align: left;
+    padding: 10px;
+    padding-bottom: 0;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+
+.item-wrapper .item-one{
+    display: flex;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.item-wrapper .item-one .item-letf{
+   width: 20%;
+   position: relative;
+}
+.item-one .item-letf img{
+    border-radius: 3px;
+}
+.item-one .item-letf .tag{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00afc7;
+    color:#fff;
+    font-size: 12px;
+    display: inline-block;
+    padding: 1px 7px;
+    height: 14px;
+    line-height: 14px;
+    border-radius: 0 14px 0 0; 
+    opacity: 0.8;
+}
+
+.item-one .item-right .title{
+    font-size: 16px;
+    font-weight: 540;
+}
+
+.item-wrapper .item-one .item-right{
+    padding-left: 20px;
+}
+
+.item-one .item-right .fenshu{
+    height: 25px;
+    line-height: 25px;
+}
+
+.item-one .item-right .score{
+    color: orangered;
+    font-size: 16px;
+}
+.item-one .item-right .comment{
+    font-size: 12px;
+    display: inline-block;
+    padding-left: 20px;
+}
+.item-right .rmb{
+    color: orangered;
+    font-size: 12px;
+    font-weight: bold;
+}
+.item-right .money{
+    color: orangered;
+    font-size: 16px;
+}
+
+.item-wrapper .item-one .address{
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    font-size: 12px;
+}
+.item-wrapper .open-time{
+    font-size: 14px;
+    padding-top: 5px;
+    border-top: 1px solid rgb(242, 244, 247);
+    padding-bottom: 5px;
+    min-height: 30px;
+    vertical-align: middle;
+    
+}
+
+.item-wrapper .sight-desc{
+    height: 30px;
+    line-height: 30px;
+    border-top: 1px solid rgb(242, 244, 247);
+  
+}
+.item-wrapper .ticket-price{
+    padding: 5px 0;
+    font-size: 14px;
+    border-top: 1px solid rgb(242, 244, 247);
+    
+     /* border-top: 1px solid #ccc; */
+}
+.item-wrapper .ticket-price .rmb{
+    color: orangered;
+    font-size: 12px;
+}
+
+.item-wrapper .ticket-price span.rmb{
+    font-size: 16px;
+}

@@ -1,0 +1,113 @@
+
+.local-tourist{
+   margin: 0 10px;
+   border: 1px solid #ccc;
+   border-radius: 10px;
+   
+}
+
+.paihangbang{
+    border-radius: 5px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.paihangbang .tittle{
+    text-align: left;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+}
+
+.paihangbang .list{
+    display: flex;
+    /* justify-content: space-between; */
+    padding-top: 10px;
+    height: 85px;
+    position: relative;
+}
+
+.paihangbang .list-left{
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+.paihangbang p{
+    text-align: left;
+}
+
+.paihangbang  .desc{
+    background-color: rgb(233, 32, 61);
+    /* font-weight: bold; */
+    font-size: 12px;
+    color: #fff;
+    padding : 0 5px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+.paihangbang .list-desc{
+    padding: 20px 0 0 20px;
+    position: absolute;
+    right: 0px;
+}
+
+.paihangbang .list-left img{
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+}
+
+.paihangbang .rmb{
+    font-size: 10px;
+    color: orangered;
+}
+
+.paihangbang  .list-right{
+    padding-left: 10px;
+}
+
+.paihangbang .sub-tittle{
+    font-weight: bold;
+    font-size: 14px;
+}
+.paihangbang .discont{
+    color: red;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.paihangbang .list-right .price{
+    color: orangered;
+    font-weight: bold;
+    height: 20px;
+    line-height: 20px;
+}
+.paihangbang .list-right .org-price{
+    font-size: 10px;
+    text-decoration: line-through;
+    height: 20px;
+    line-height: 20px;
+}
+
+
+
+.paihangbang .panghangbang-desc{
+    font-size: 12px;
+    padding: 0;
+}
+
+.local-tourist .local-title{
+    font-size: 18px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.main-title{
+    text-align: left;
+    padding-left: 20px;
+    height: 30px;
+    line-height: 30px;
+}

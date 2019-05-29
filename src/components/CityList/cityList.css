@@ -1,0 +1,21 @@
+.city-list ul{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 10px;
+}
+
+.city-list ul li{
+  
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  width: 33.33%;
+ 
+}
+.city-list ul li span{
+    display: inline-block;
+    border: 1px solid #ccc;
+    width: 90px;
+    padding: 5px 0;
+}

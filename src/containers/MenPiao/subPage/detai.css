@@ -1,0 +1,125 @@
+.menpiao-wrapper{
+    padding: 0 10px;
+}
+.menpiao-wrapper .main{
+    display: flex;
+    min-height: 110px;
+}
+.menpiao-wrapper .left{
+    position: relative;
+    height: 100%;
+}
+.menpiao-wrapper .main .bookingTag{
+    position: absolute;
+    background-size: 100%;
+    padding:1px 5px;
+    color: #fff;
+    background-image: url("https://img1.qunarzz.com/piao/fusion/1802/52/b9080e45b69b4f02.png");
+    top: 0;
+    left: 0;
+}
+
+.menpiao-wrapper .right{
+    padding: 5px 15px;
+    height: 100%;
+}
+.right .name{
+    height: 30px;
+}
+.right .qunarPrice{
+    display: flex;
+    justify-content: space-between;
+    color: orangered;    
+}
+.right .qunarPrice .rmb{
+    font-size: 18px;
+    padding-right: 5px;
+}
+
+.right .hybridAddress{
+    text-align: right;
+    height: 24px;
+    line-height: 24px;
+}
+.right .sightSimpleDesc{
+    text-align: left;
+    font-size: 13px;
+    color: orange;
+}
+.right .commentCount span{
+    color: #369;
+}
+
+
+
+.borderpx{
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
+
+.sub-main .addressDetail{
+    height: 30px;
+    line-height: 30px;
+}
+
+.sub-main .openTime{
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.tags{
+    display: flex;
+    justify-content: space-around;
+    color: orangered;
+    padding: 5px;
+ 
+}
+.tag{
+   
+    padding:1px 5px;
+}
+
+.ticketType{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.ticketType .order{
+    border: none;
+    background-color: orangered;
+    color: #fff;
+    width: 100px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 12px;
+    border-radius: 25px;
+}
+
+.ticket .ticketTypeName .rmb{
+    color: red;
+}
+.ticket .qunarPrice>p{
+    width: 100%;
+    text-align: center;
+}
+
+.trafficInfos{
+   border: 1px solid #ccc;
+   padding: 10px 5px;
+}
+
+.trafficInfos .trafficInfos-name{
+    text-align: left;
+    color: orangered;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.trafficInfos .trafficInfos-detail{
+    font-size: 12px;
+    text-align: left;
+    color: #666;
+    line-height: 14px;
+}

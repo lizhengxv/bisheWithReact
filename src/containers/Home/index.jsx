@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom'
-
-import Logo from '../../statics/images/logo.jpg';
-import Logo1 from '../../statics/images/logo2.png'
-import './home.css'
-
+import HomeHeader from '../../components/Header';
+import {connect} from 'react-redux';
+import Swiper from '../../components/Swiper';
+import LocalTourist from './subHome/LocalTourist';
+import HomeNav from './subHome/Nav'
 
 class Home extends Component{
     constructor(props){
@@ -13,42 +12,35 @@ class Home extends Component{
             
         }
     }
-
+ 
     render(){
+        // console.log('~~~',this.props.userinfo);
+        let usercity = this.props.userinfo;
+        let {history} = this.props
         return(
-
-         
-
-               <div className="home">
-
-                   <div className="title" > 
-                        <div className="logo" >
-                            <img src={Logo1} alt=""/>
-                            <p> xxx公司招聘网</p>
-                        </div>
-                        <div>
-                            <span>
-                                <Link to={'/login'}>登录</Link> 
-                            </span>
-                            &nbsp;/&nbsp;
-                            <span>
-                                <Link to={'/register'}>注册</Link> 
-                            </span>
-                           
-                        </div>
-                   </div>
-
-                    <div>
-                        <img src={Logo} alt=""/>
-                    </div>
-               </div>
-
-
-              
-          
-         
+            <div>
+               <HomeHeader usercity={usercity} history={history} />
+               <Swiper></Swiper>
+               <HomeNav></HomeNav>
+               <h2 className="main-title" > 嘻游力荐 </h2>
+               <LocalTourist usercity={usercity} ></LocalTourist>
+               <span ref={ (ref)=>  this.loadMore = ref  } > 加载更多...  </span>
+            </div>
         )
     }
 }
 
-export default Home;
+const mapStateToProps = ( state )=>{
+    return{
+        userinfo : state.userinfo
+    }
+}
+
+const mapDispatchToPros = (dispatch)=>{
+    return {
+      
+    }
+}
+
+
+export default connect(mapStateToProps,mapDispatchToPros)(Home);

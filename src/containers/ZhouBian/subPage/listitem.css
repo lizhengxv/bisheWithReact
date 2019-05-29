@@ -1,0 +1,110 @@
+.c-item-title{
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+.c-item-title .user{
+    display: flex;
+    align-items: center;
+}
+
+.user-comment .c-title{
+    display: flex;
+    justify-content: space-around;
+    height: 30px;
+    align-items: center;
+}
+
+.user-comment .specSatisfactionList{
+   
+    display: flex;
+    flex-wrap: wrap;
+}
+.comment-item{
+    padding: 10px 15px;
+    border-bottom: 1px solid #ccc;
+}
+.user-comment .specSatisfactionList li{
+    box-sizing: border-box;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 5px;
+    
+   
+    
+}
+.user-comment .specSatisfactionList li span{
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 15px;
+    background-color: orangered;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.user-satis .c-item-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.c-item-title .compName{
+  background-image:   linear-gradient(160deg, #00ffd5 20%,#008cff 80%);
+  color:#333;
+  padding: 0 8px;
+  height: 16px;
+  border-radius: 8px;
+
+}
+.comment-item .remarkTime{
+    font-size: 12px;
+    color:#666;
+    padding-left: 10px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.comment-item .content{
+    font-size: 12px;
+    line-height: 16px;
+    color: #000;
+}
+
+
+.c-item-title .icon-user{
+    color: orangered;
+    font-size: 20px;
+}
+
+.comment-item .user-img{
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 200px;
+    overflow: scroll;
+}
+
+.comment-item .user-img li{
+   box-sizing: border-box;
+   padding: 5px;
+   width: 33%;
+}
+.comment-item .user-img .suoluetu{
+    width: 100%;
+    border-radius: 5px;
+
+}
+
+.comment-item .user-img .bigImg{
+    border: 1px solid red;
+}
+
+.comment-item .comment-wrapper{
+    display: flex;
+    justify-content: center;
+  
+}
+
+.comment-item .comment-wrapper>div{
+    width: 80%;
+}

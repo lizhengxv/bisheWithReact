@@ -1,0 +1,82 @@
+.home-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(233, 32, 61);
+    /* background-color: skyblue; */
+    padding: 10px;
+    margin: 0;
+    color: #333;
+}
+
+ .home-header .home-header-search{
+     background: #fff;
+ }
+
+.home-header .home-header-item{
+    color: #fff;
+}
+
+.home-header .home-header-item:nth-child(2){
+    position: relative;
+    flex: 1;
+}
+
+.home-header-item .home-header-search{
+    width: 80%;
+    border: none;
+    /* padding: 5px 10px; */
+    padding: 5px 0 5px 25px;
+    border-radius: 15px;
+}
+
+.header-common{
+    background-color: rgb(233, 32, 61);
+    text-align: center;
+    color: #fff;
+    position: relative;
+    height: 46px;
+    line-height: 46px;
+}
+.header-common .header-title{
+    font-size: 16px;
+    display: inline;
+    font-weight: bold;
+}
+.header-common .icon-chevron-left{
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    font-size: 16px;
+}
+
+.search-header{
+    background-color: skyblue;
+    height: 46px;
+    display: flex;
+    align-items: center;
+}
+.search-header.ticket-search-header{
+    background-color: rgb(242,244,247)
+}
+
+.search-header>div{
+    width: 100%;
+}
+
+.search-header .icon-chevron-left{
+    float: left;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.home-header .home-header-item i{
+    font-size: 18px;
+    color: #fff;
+}
+
+.home-header .home-header-item .cityname{
+    color: #fff;
+    font-size: 16px;
+}

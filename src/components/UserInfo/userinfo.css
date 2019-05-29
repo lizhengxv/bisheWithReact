@@ -1,0 +1,25 @@
+.wrapper-userinfo {
+    padding: 10px;   
+    position: relative;
+}
+
+.wrapper-userinfo .userinfo{
+    text-align: left;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    padding-left:20px; 
+   
+}
+
+.wrapper-userinfo .touxiang{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.wrapper-userinfo .logout{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}

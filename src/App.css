@@ -1,13 +1,11 @@
 .App {
   text-align: center;
-  max-width: 1000px;
-  margin: 0 auto;
 }
+
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
-  pointer-events: none;
 }
 
 .App-header {
@@ -35,21 +33,40 @@
 }
 
 
-/* 初始化css
- */
+/* 移动端初始化样式 */
+*{margin:0;padding:0;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-text-size-adjust:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;font-family:Arial, "微软雅黑";}
 
- body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; } 
-body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; } 
-h1, h2, h3, h4, h5, h6{ font-size:100%; } 
-address, cite, dfn, em, var { font-style:normal; } 
-code, kbd, pre, samp { font-family:couriernew, courier, monospace; } 
-small{ font-size:12px; } 
-ul, ol { list-style:none; } 
-a { text-decoration:none; } 
-a:hover { text-decoration:underline; } 
-sup { vertical-align:text-top; } 
-sub{ vertical-align:text-bottom; } 
-legend { color:#000; } 
-fieldset, img { border:0; } 
-button, input, select, textarea { font-size:100%; } 
-table { border-collapse:collapse; border-spacing:0; }
+img{border:none;max-width:100%;vertical-align:middle;}
+
+body,p,form,input,button,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6{margin:0;padding:0;list-style:none;overflow-x:hidden}
+
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+
+input,textarea{-webkit-user-select:text;-ms-user-select:text;user-select:text;-webkit-appearance:none;font-size:1em;line-height:1.5em;}
+
+table{border-collapse:collapse;}
+
+input,select,textarea{outline:none;border:none;background:none;}
+
+
+a:link,a:active{text-decoration:none;}
+
+a:visited{text-decoration:none;}
+
+a:hover{color:#f00;text-decoration:underline;}
+
+a{text-decoration:none;-webkit-touch-callout:none;}
+
+em,i{font-style:normal;}
+
+li,ol{list-style:none;}
+
+html{font-size:10px;}
+
+.clear{clear:both;height:0;font-size:0;line-height:0;visibility:hidden; overflow:hidden;} 
+
+.fl{float:left;}
+
+.fr{float:right;}
+
+body{ margin:0 auto;max-width:640px; min-width:320px;color:#555; padding-bottom:8%;background:#fef9f1;height:100%;} 

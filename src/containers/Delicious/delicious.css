@@ -1,0 +1,18 @@
+.space-carousel {
+    padding: 16px;
+    background: #DEF1E5;
+    overflow: hidden;
+  }
+
+  .my-accordion .pad .am-accordion-content-box {
+    padding: 10px;
+  }
+
+  .meishi .desc{
+    
+    text-indent:2em;
+  }
+.meishi{
+    text-align: left;
+    color: #666;
+}

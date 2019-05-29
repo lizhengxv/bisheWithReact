@@ -1,0 +1,80 @@
+.zhoubian{
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+.zhoubian .zb-img{
+    height: 160px;
+    width: 100%;
+}
+.zhoubian .zb-nav{
+    position: relative;
+}
+.zhoubian .tag{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding:0 8px;
+}
+
+.zhoubian .price{
+    position: absolute;
+    background-color: orangered;
+    font-size: 20px;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    padding:0 5px;
+}
+
+.zhoubian .desc{
+    font-weight: 550;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+.over{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.zhoubian .prdSubtitle{
+    width: 100%;
+    color: #666;
+    font-size: 12px;
+    text-align: left;
+    height: 24px;
+    line-height: 24px;
+}
+.zhoubian .prdFeature{
+    text-align: left;
+    font-size: 12px;
+    padding: 2px 5px;
+    color: orangered;
+    display: flex;
+    justify-content: space-between;
+}
+.border{
+    border: 1px solid orangered;
+    padding: 2px 5px;
+}
+.zhoubian .info{
+   color: #fff;
+   background-color: orangered;
+    display: flex;
+    align-items: center;
+    padding: 2px 5px;
+}
+.zhoubian .comment{
+    text-align: left;
+    height: 40px;
+    line-height: 40px;
+}
+.zhoubian .comment img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}

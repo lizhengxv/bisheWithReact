@@ -1,0 +1,76 @@
+.detail-info{
+    margin: 0;
+    margin-top: -20px;
+    padding:0 10px;
+    text-align: left;
+}
+
+.detail-info .detai-info-tittle{
+    text-align: left;
+    background-color: aqua；
+}
+.detail-info .start{
+    font-size: 20px;
+    color: orangered;
+    height: 30px;
+    line-height: 30px;
+}
+
+.detail-info .flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    box-shadow: 2px 2px #ccc;
+   
+}
+
+.detail-info .flex .left .icon{
+    border: none;
+    color: hotpink;
+}
+.detail-info .hasboder {
+    color: orangered;
+    border: 1px solid orangered;
+    padding: 2px 5px;
+}
+.detail-info .flex .right .defen{
+    color: orangered;
+    font-size: 20px;
+}
+
+.detail-info .lscj{
+    height: 40px;
+    line-height: 40px;
+    margin: 10px 0;
+    box-shadow: 2px 2px #ccc;
+}
+
+.detail-info .comment{
+    text-align: center;
+    padding-top: 20px;
+    color: orange;
+}
+.detail-info .comment li{
+    height: 20px;
+    line-height: 20px;
+}
+
+.detail-info .order{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.detail-info .order button{
+    width: 40%;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    color: #fff;
+    background-color: orangered;
+}
+.detail-info .order .conserve{
+    background-color: #ccc;
+    color: #333;
+    font-weight: bold;
+}

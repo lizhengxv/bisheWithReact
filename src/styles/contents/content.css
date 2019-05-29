@@ -1,0 +1,11 @@
+.dis-play{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+}
+
+.dis-play .dis-item{
+    width: 80px;
+    height: 80px;
+    background: #ccc;
+}

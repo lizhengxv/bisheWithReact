@@ -1,0 +1,58 @@
+.navigation{
+   margin: 0 10px 10px 10px;
+   border-radius: 10px;
+   overflow: hidden;
+
+}
+
+a:link {color:#333} /* 未被访问的链接 蓝色 */
+a:visited {color: #333} /* 已被访问过的链接 蓝色 */
+a:hover {color: #333} /* 鼠标悬浮在上的链接 蓝色 */
+a:active {color: #333} /* 鼠标点中激活链接 蓝色 */
+
+.navigation .nav-link{
+   
+}
+
+
+.navigation .navigation-ul:nth-child(1){
+    border-bottom: 1px solid #fff;
+}
+
+
+.navigation .navigation-ul{
+    display: flex;
+    height: 66px;
+    line-height: 66px;
+    background:linear-gradient(to right,#4b8fed,#53bced)  
+}
+.navigation .navigation-ul:nth-child(2){
+    background:linear-gradient(to right,#fa5956,#fb8650 54%)
+}
+
+
+.navigation .navigation-li:nth-child(1){
+    background-image: url('../../../static/images/bg.png');
+    background-repeat: no-repeat;
+    background-size: 79px auto;
+    background-position: 60px 26px;
+    flex: 2
+}
+.nav-ul .navigation-li:nth-child(1){
+    background-image: url('../../../static/images/bg2.png');
+}
+
+.navigation .navigation-li:nth-child(2),
+.navigation .navigation-li:nth-child(3){
+    flex: 1.5
+}
+
+.navigation .navigation-li:nth-child(2){
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+.navigation .navigation-li a{
+    color: #fff;
+    font-size: 16px;
+}

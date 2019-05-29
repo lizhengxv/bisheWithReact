@@ -1,0 +1,26 @@
+.search-inpupt{
+    display: flex;
+    padding-left: 20px;
+}
+.search-inpupt .wrapper{
+    width: 80%;
+    position: relative;
+}
+
+.search-inpupt .icon-search{
+    color: #ccc !important ;
+    position: absolute;
+    top:4px;
+    font-size: 16px;
+    left: 10px;
+}
+
+.search-inpupt input{
+    background-color: #fff;
+    padding-left: 30px;
+    border: none;
+    height: 26px;
+    line-height: 26px;
+    border-radius: 13px;
+    width: 100%;
+}

@@ -1,0 +1,113 @@
+.zb-detail .img>img{
+    width: 100%;
+    height: 200px;
+}
+.zb-detail .img{
+    position: relative;
+}
+
+
+.zb-detail .img .bargainSlogan{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-weight: bold;
+    padding: 2px 5px;
+}
+
+.zb-detail .zb-desc{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.zb-detail .zb-desc .star{
+    color: orangered;
+    padding-left: 20px;
+}
+
+.zb-detail{
+    text-align: left;
+}
+
+.zb-detail .zb-wrapper{
+    padding: 10px;
+}
+
+.zb-detail .zb-price{
+    height: 30px;
+    line-height: 30px;
+    /* background-image: linear-gradient(160deg, #0078ff 20%,#002abb 80%);
+     */
+     background-image: linear-gradient(160deg, #00ffd5 20%,#008cff 80%);
+}
+
+.zb-detail .zb-price span:nth-child(1) {
+    color: orangered;
+    font-size: 16px;
+    font-weight:bold;
+}
+.zb-detail .zb-price span:nth-child(2){
+    font-size: 12px;
+    padding-left: 20px;
+    color: #333;
+}
+.zb-detail .fenqi{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+.zb-detail .fenqi p:nth-child(1){
+    color: orangered;
+}
+
+.zb-detail .de-tag{
+    /* display: flex;
+    font-size: 12px; */
+}
+
+.zb-detail .youhui{
+    display: flex;
+    justify-content: space-around;
+    color: orangered;
+    padding-top: 5px;
+    border-bottom: 5px solid #ccc;
+    padding-bottom: 5px;
+    
+}
+
+.zb-detail .youhui li{
+    border: 1px solid orange;
+    font-size: 12px;
+    padding: 5px 5px;
+}
+
+.zb-detail .intruduce{
+    height: 25px;
+    line-height: 25px;
+    border-bottom: 1px solid #ccc;
+}
+
+.zb-detail .fenqifangan li{
+    font-size: 12px;
+    color: orangered;
+    padding: 5px 5px;
+}
+
+
+
+.lookfor{
+   padding: 0 40px;
+}
+.lookfor .btn{
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+}

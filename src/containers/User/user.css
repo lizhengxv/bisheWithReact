@@ -1,34 +1,82 @@
-.user .user-info .smile-o{
- font-size: 20px;
+.user-order{
+    padding: 10px;
 }
-
-.user .user-info{
-    height: 50px;
-    line-height: 50px;
-}
-
-.user .user-info>p{
-    float: right;
-}
-
-.zhiye-list{
-    border-bottom: 1px solid #ccc;
-    padding: 5px 0px;
-  margin-bottom: 5px;
-}
-
-.zhiye-list .zhiye-juti-info{
-    display: flex;
-    justify-content: space-around;
-}
-
-.zhiye-list .zhiye-juti-info{
-    width: 100%;
-}
-.zhiye-list:nth-child(1){
- 
-}
-.zhiye-list .jutiinfo{
-    height: auto;
+.user-order .main-title{
     text-align: left;
+    font-size: 14px;
+    height: 20px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.user-order-item {
+    padding:10px;
+    height: 150px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px #ccc;
+    position: relative;
+}
+
+.user-order-item .order-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    padding-bottom: 10px;
+    color: #333;
+} 
+
+.user-order-item .order-title .complete{
+    color: orangered;
+    border: 1px solid orangered;
+    padding: 2px 5px;
+}
+
+.user-order-item .order-title .cancel{
+   
+    border: 1px solid #ccc;
+    padding: 2px 5px;
+}
+.user-order-item .order-content{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.user-order-item .order-content .item-left{
+   width: 30%;
+}
+
+.user-order-item .order-content .item-desc{
+    width: 50%;
+    overflow: hidden;
+    line-height: 20px;
+}
+
+.user-order-item .order-content .item-price{
+    font-weight: bold;
+
+}
+.order-content .item-price>p{
+    height: 30px;
+}
+
+.user-order-item .btn-comment{
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+   
+}
+
+.user-order-item .btn-comment>button{
+    width: 80px;
+    border: none;
+    height: 26px;
+    border: 1px solid #666;
+    font-size: 14px;
+    border-radius: 13px;
+    background-color: rgb(245,245,249);
+  
 }

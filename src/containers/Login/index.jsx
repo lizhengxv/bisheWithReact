@@ -1,74 +1,123 @@
 import React, {Component} from 'react';
-import { Form, Icon, Input, Button, Checkbox } from 'antd';
-import {Link} from 'react-router-dom'
+import {connect} from 'react-redux';
+
+import HeaderCommon from '../../components/Header/HeaderCommon';
+import LoginComponent from './subPage/LoginComponent';
+
+import LocalStorage from '../../util/localStore'
 
 import './login.css'
 
-const FormItem = Form.Item;
-
-
 class Login extends Component{
-    handleSubmit = (e) => {
-        e.preventDefault();
-        this.props.form.validateFields((err, values) => {
-          if (!err) {
-               let {userName,password} = values;
-               if(userName === 'jiajia'){
-                    this.props.history.push('/admin')
-               }else{
-                   this.props.history.push('/users')
-               }
-          }
-        });
-      }
+    constructor(props){
+        super(props);
+        this.state = {
+            isLogin:false
+        }
+    }
 
-      componentDidMount(){
-          console.log(this.props.history)
-      }
+    // 检查是否登录
+    checkIsLogin = ()=>{
 
-      render() {
-        const { getFieldDecorator } = this.props.form;
-        return (
-          <div className="login" >
-              <div>
-                    <h2> 欢迎登录....... </h2>
-                    <Form onSubmit={this.handleSubmit} className="login-form">
-                        <FormItem>
-                        {getFieldDecorator('userName', {
-                            rules: [{ required: true, message: '请输入用户名' }],
-                        })(
-                            <Input prefix={<Icon type="user" style={{ fontSize: 13 }} />} placeholder="用户名" />
-                        )}
-                        </FormItem>
-                        <FormItem>
-                        {getFieldDecorator('password', {
-                            rules: [{ required: true, message: '请输入密码' }],
-                        })(
-                            <Input prefix={<Icon type="lock" style={{ fontSize: 13 }} />} type="password" placeholder="密码" />
-                        )}
-                        </FormItem>
-                        <FormItem>
-                        {getFieldDecorator('remember', {
-                            valuePropName: 'checked',
-                            initialValue: true,
-                        })(
-                            <Checkbox>记住我</Checkbox>
-                        )}
-                        <a className="login-form-forgot">忘记密码</a>
-                        &nbsp;
-                        <Button type="primary" htmlType="submit"  style = {{ width:'100px' }}  className="login-form-button">
-                            登录
-                        </Button>
-                        <br/>
-                            <Link to={'/register'} >
-                                <span>现在去注册</span>
-                            </Link>
-                        </FormItem>
-                    </Form>
-              </div>
-          </div>
-        );
+    //   查看本地没有有用户信息，如果有，更新到redux
+      let user = localStorage.getItem('user');
+      if(user){
+            this.props.setUserInfo(user);
+            this.setState({
+                isLogin:true
+            })
+            this.props.history.push('/user')
       }
+      else if(!user){
+         this.props.history.push('/login')
+      }
+      else{
+            const userphone = this.props.userphone;
+            if(userphone){
+                this.setState({
+                    isLogin:true
+                })
+                this.props.history.push('/user')
+
+            }else{
+                this.setState({
+                    isLogin:false
+                })
+            }
+            // 如果d登录了，而且是从收藏页返回的登录页，不去用户中心，返回首页吧
+            if( userphone && this.props.match.params.detail){
+                this.props.history.push('/');
+            }
+      }
+    }
+
+    componentDidMount(){
+        this.checkIsLogin();   
+        // console.log('登录页-----',this.props.match.params.id, this.props.match.params.detail);
+    }
+
+    // 点击登录事件
+    getUserPhone = ( phone )=>{
+        this.props.setUserInfo(phone);
+
+        // 登录成功之后，把用户存在localstorage
+        LocalStorage.setItem('user',phone);
+
+
+        // 根据路由判断  如果是从收藏页跳的， 就跳回收藏页
+       
+        let {detail,id} = this.props.match.params;
+        if(detail){
+        //    如果是从收藏页跳过来的，回到收藏页去
+            this.goSomePage(`/detail/${detail}/${id}`);
+
+        }
+         //如果是从首页点的登录，就跳到用户页
+        else{
+            this.goSomePage('/user');
+        }
+       
+
+       
+    }
+    goSomePage(path){
+        // 记住push
+        // this.props.history(path)
+      this.props.history.push(path)
+    }
+
+    render(){
+        return(
+            <div>
+                {
+                    // isLogin ? <div> </div> 
+                    // :
+                    <div>
+                        <HeaderCommon title="登录" />
+                        <LoginComponent getUserPhone={this.getUserPhone} />
+                    </div>
+                }               
+            </div>
+        )
+    }
 }
-const WrappedNormalLoginForm = Form.create()(Login);
-export default WrappedNormalLoginForm;
+
+
+function mapStateToProps( state ){
+    return{
+        userphone:state.userphone
+    }
+}
+
+function mapDispatchToProps(dispatch){
+    return{
+        setUserInfo : (data)=>{
+            dispatch( {
+                type:"SET_USER_INFO",
+                data
+            } )
+        }
+    }
+}
+
+export default connect( mapStateToProps,mapDispatchToProps )(Login);

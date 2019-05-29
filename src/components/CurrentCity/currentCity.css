@@ -1,0 +1,10 @@
+.current-city h1{
+    color: #333;
+    
+}
+
+.current-city{
+    padding: 20px 10px; 
+    border-bottom: 1px solid #ccc;
+    margin: 0 10px;
+} 

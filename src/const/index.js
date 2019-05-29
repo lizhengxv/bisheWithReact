@@ -1,0 +1,5 @@
+export const CITY = 'USER_CURRENT_CITY';
+export const UPDATE_USERINFO = 'UPDATE_USERINFO';
+export const LOGOUT_USERINFO = 'LOGOUT_USERINFO';
+export const SET_USER_INFO = 'SET_USER_INFO';
+export const CONVERSE_ADD ='CONVERSE_ADD'
